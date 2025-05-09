@@ -1,0 +1,6 @@
+<h2>Cadastro de Produto</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }} <!-- Renderiza o formulário como parágrafos -->
+    <button type="submit">Salvar</button>
+</form>
